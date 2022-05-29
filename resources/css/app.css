@@ -1,0 +1,168 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.card {
+    @apply 
+    w-6/12
+    min-w-min
+    mx-auto
+    my-12
+    p-5
+    shadow-2xl
+    bg-slate-300
+    border-4
+    hover:shadow-xl
+    hover:shadow-cyan-500
+    duration-200
+  }
+ 
+  .title {
+    @apply 
+    text-6xl
+    text-center
+    my-10
+    font-bold
+    text-white
+  }
+  .btn {
+    @apply
+    py-2 px-4
+    shadow-lg
+    rounded-full
+    hover:scale-105
+    duration-300
+    m-1
+    active:scale-110
+    disabled:opacity-50
+    disabled:cursor-not-allowed
+    disabled:scale-100
+    
+  }
+
+  .btn-primary{
+      @apply
+      bg-gradient-to-r
+      from-teal-400
+      to-sky-700
+      text-white
+      hover:bg-gradient-to-l
+      hover:from-teal-400
+      hover:to-sky-700
+      
+  }
+
+  .btn-secondary{
+    @apply
+    bg-gradient-to-r
+    from-lime-400
+    to-lime-600
+    text-white
+}
+.btn-danger{
+    @apply
+    bg-gradient-to-r
+    from-rose-400
+    to-rose-800
+    text-white
+}
+
+
+table{
+    @apply
+    shadow-xl
+}
+
+/* thead{
+    @apply
+} */
+
+tr{
+    @apply
+    border-b-2
+    border-slate-400
+    hover:bg-slate-400
+    duration-300
+}
+
+td{
+    @apply
+    md:px-10
+    sm:px-2
+    py-4
+    text-center
+}
+th{
+    @apply
+    uppercase
+    py-5
+}
+
+
+.add{
+    @apply
+    rounded-full
+    w-96
+    shadow-lg
+    mb-10
+    
+}
+
+.addBtn{
+    @apply
+    py-3 px-4
+    rounded-r-full
+    w-4/12
+    active:scale-110 duration-100
+
+    
+}
+
+.addInput{
+    @apply
+    border-none
+    w-8/12
+    py-3
+    px-5
+    rounded-l-full
+    bg-slate-200
+    focus:bg-slate-100
+    focus:outline-none
+    focus:border-none
+    duration-300
+}
+
+
+.toggle{
+    @apply
+    w-full 
+
+}
+.switch{
+    @apply
+    shadow-lg
+    w-16 h-10 
+    flex
+    mx-auto
+    my-2
+    p-1
+    bg-rose-600
+    shadow-rose-400
+    rounded-full duration-300 ease-in-out 
+    peer-checked:bg-green-600
+    peer-checked:shadow-green-400
+    after:w-8 
+    after:h-8 
+    after:bg-white 
+    after:rounded-full 
+    after:duration-500 
+    peer-checked:after:translate-x-6
+    cursor-pointer
+} 
+.switch-theme{
+    @apply
+    bg-slate-600
+    shadow-slate-300
+    peer-checked:bg-cyan-600
+    peer-checked:shadow-cyan-300
+}
